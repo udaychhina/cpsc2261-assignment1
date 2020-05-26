@@ -13,7 +13,7 @@ export class Orchard {
 		this.trees.push(t);
 	}
 
-	totalFruitAvailable() {
+	totalFruitAvailable(): number {
 		let total: number = 0;
 		if(this.trees.length == 0) {
 			total = 0;
@@ -26,7 +26,7 @@ export class Orchard {
 		return total;
 	}
 
-	canFit(t: Tree) {
+	canFit(t: Tree): boolean {
 		let flag: boolean = true;
 		let totalSize: number = 0;
 		if(this.trees.length == 0) {

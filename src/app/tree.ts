@@ -11,7 +11,7 @@ export class Tree {
 		this.growth += growth;
 	}
 
-	fruitAvailable() {
+	fruitAvailable(): number {
 		let available;
 		if(this.growth == 0) {
 			available = 0;
@@ -21,7 +21,7 @@ export class Tree {
 		return available;
 	}
 
-	size() {
+	size(): number {
 		return Math.round(Math.pow(this.growth, 2 / 3));
 	}
 }
